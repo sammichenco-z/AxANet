@@ -208,7 +208,7 @@ def cal_sim(goal_anomaly_path_list, goal_hazard_path_list, goal_turn_path_list, 
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_path', type=str, default='/DATA_EDS2/zyp/jinbu/jinbu_18/gaze_visualize_utils/')
+    parser.add_argument('--data_path', type=str)
     parser.add_argument('--data_stage', type=str, choices=['t0_t1', 't1_t2', 't2_end', 't0_end'], default='t0_end')
     parser.add_argument('--driver_level', type=str, choices=['old_mean', 'new_mean'], default='new_mean')
     parser.add_argument('--per_batch_image_count', type=int, default=30)

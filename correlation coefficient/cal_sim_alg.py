@@ -167,7 +167,7 @@ def cal_sim(goal_anomaly_path, goal_hazard_path, goal_turn_path, per_batch_image
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_path', type=str, default='/DATA_EDS2/zyp/jinbu/jinbu_eds/jinbu/drama_lxy/')
+    parser.add_argument('--data_path', type=str)
     parser.add_argument('--alg_pretrain', type=str, choices=['pretrained', 'no_pretrained'], default='pretrained')
     parser.add_argument('--alg_finetune', type=str, choices=['finetuned', 'no_finetuned'], default='finetuned')
     parser.add_argument('--per_batch_image_count', type=int, default=21)

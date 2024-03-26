@@ -291,8 +291,8 @@ def cal_sim(data_path_alg, data_path_human_dir, human_data_stage, save_file_name
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_path_alg', type=str, default='/DATA_EDS2/zyp/jinbu/jinbu_eds/jinbu/drama_lxy/')
-    parser.add_argument('--data_path_human_dir', type=str, default='/data18/jinbu/gaze_visualize_utils/gaze_compare_human_gaze_final_version_1_18/')
+    parser.add_argument('--data_path_alg', type=str)
+    parser.add_argument('--data_path_human_dir', type=str)
     parser.add_argument('--human_data_stage', type=str, choices=['t0_t1', 't1_t2', 't2_end', 't0_end'], default='t1_t2')
     parser.add_argument('--save_file_name', type=str, default='r_p_file.xlsx')
     parser.add_argument('--resize_size', type=int, default=224)
